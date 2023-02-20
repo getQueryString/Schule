@@ -4,7 +4,7 @@ package Extra;
 
 import java.util.concurrent.TimeUnit;
 
-class ZweiDArrayMitRandom {
+class MagischesQuadratMitRandom {
     public static void main(String[] args) throws InterruptedException {
         /*boolean fertig = false;
         int[][] array = new int[3][3];
