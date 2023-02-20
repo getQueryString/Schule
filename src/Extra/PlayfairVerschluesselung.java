@@ -8,7 +8,7 @@ public class PlayfairVerschluesselung {
 
     static char[][] pfq = new char[5][5]; // pfq = Playfair Quadrat
     static char[] alphabet = new char[]
-            {'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'};
+            {'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'};
     static String newAlphabet;
     static String encryptedInput;
     static Scanner key = new Scanner(System.in);
@@ -20,7 +20,7 @@ public class PlayfairVerschluesselung {
 
     static void start() {
         System.out.println("Dein Schlüsselwort: ");
-        String input = key.next();
+        String input = key.next().toUpperCase().replace("J", "I");
         if (input.length() <= 25 && input.length() > 0) {
             key.close();
             removeDuplicateChar(input);
@@ -40,9 +40,9 @@ public class PlayfairVerschluesselung {
                 }
             }
         }
-        System.out.println(newKey.length());
-
         newAlphabet = new String(alphabet).replace(" ", "");
+
+        System.out.println(newKey.length());
         System.out.println(newAlphabet);
     }
 
