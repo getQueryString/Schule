@@ -46,7 +46,7 @@ public class VigoCrypt {
 
         for (int i = 1; i < matrix.length; i++) {
             for (int j = 0; j < matrix[0].length; j++) {
-                matrix[i][j] = matrix[Math.max(i - 1, 0)][j - 1 >= 0 ? j - 1 : 25];
+                matrix[i][j] = matrix[i - 1][j - 1 >= 0 ? j - 1 : 25];
                 System.out.print(matrix[i][j] + "  ");
             }
             System.out.println();
