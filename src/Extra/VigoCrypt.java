@@ -12,13 +12,20 @@ public class VigoCrypt {
     static Scanner sc = new Scanner(System.in);
 
     static String newAlphabet;
+
     static StringBuilder newInput = new StringBuilder();
+    //static StringBuilder encryptedInput = new StringBuilder();
+    //static StringBuilder decryptedOutput = new StringBuilder();
 
     public static void main(String[] args) {
-        System.out.println("Gebe einen Quadrat-Schlüssel ein: ");
-        String input = sc.next().toUpperCase();
+        System.out.println("Gebe einen Quadrat-Schluessel ein: ");
+        String input = sc.next().toUpperCase();        // input -> keyInput
         sc.close();
         createMatrix(removeDuplicateChars(input));
+
+
+        //System.out.println("Verschluesselt: " + getEncryptedInput(toEncryptedInput, input));
+        //System.out.println("Entschluesselt: " + getDecryptedOutput(encryptedInput, input));
     }
 
     static StringBuilder removeDuplicateChars(String input) {
@@ -52,4 +59,37 @@ public class VigoCrypt {
             System.out.println();
         }
     }
+
+    /*static String getEncryptedInput(String /*toEncryptedTextinput, String key) {
+        // Position von zu verschlüsselndem char in 0. Reihe suchen
+        // Position vom char des keys in 0. Spalte suchen
+
+        // charPos = matrix[row ? i : 0][column ? j : 0]   ?
+
+        int row, column;
+
+        for (int i = 0; i < input.length; i++) {
+            row = matrix.indexOf(toEncryptedChar);    // nicht indexOf	!
+            column = matrix[0].indexOf(key);
+
+            encryptedInput.append(matrix[row][column]);
+        }
+        return encryptedInput.toString();
+    }
+
+    static String getDecryptedOutput(String encryptedChar, String key) {
+        // Position von key in 0. Spalte suchen
+        // Position von verschlüsseltem char in der Reihe vom key in 0. Spalte suchen
+        // Von der Spalte dieses keys die 0. Reihe nehmen
+
+        int row, column;
+
+        for (int i = 0; i < encryptedInput.toString().length; i++) {
+            row = matrix.indexOf(key);
+            column = matrix.indexOf(encryptedChar);
+
+            decryptedOutput.append(matrix[row][column]);
+        }
+        return decryptedOutput.toString();
+    }*/
 }
