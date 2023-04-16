@@ -35,8 +35,10 @@ public class VigoCrypt {
         for (int i = 0; i < input.length(); i++) {
             currentChar = input.charAt(i);
             for (int j = 0; j < alphabet.length; j++) {
-                if (newInput.toString().indexOf(currentChar) < 0) newInput.append(currentChar);
-                if (currentChar == alphabet[j]) alphabet[j] = ' ';
+                if (newInput.toString().indexOf(currentChar) < 0)
+                    newInput.append(currentChar);
+                if (currentChar == alphabet[j])
+                    alphabet[j] = ' ';
             }
         }
         newAlphabet = new String(alphabet).replace(" ", "");
