@@ -16,13 +16,13 @@ public class Gespenst {
         this.spukGeraeusch = spukGeraeusch;
     }
 
-    public void spuken(int count) {
+    public void spuken(int spukCount) {
         System.out.print(name + ":\t");
-        for (int i = 0; i < count; i++) {
+        for (int i = 0; i < spukCount; i++) {
             System.out.print(spukGeraeusch + " ");
         }
         System.out.println();
-        setSpukImpact(count);
+        setSpukImpact(spukCount);
     }
 
     public void setName(String name) {
