@@ -63,7 +63,7 @@ public class TuermeVonHanoi {
         }
     }
 
-    static void printStacks(Stack S, Stack H, Stack Z) {
+    static <E> void printStacks(Stack<E> S, Stack<E> H, Stack<E> Z) {
         if (sizeOfStartTower % 2 == 0)
             System.out.println("S=" + S + ";\nH=" + H + ";\nZ=" + Z + "\n");
         else
