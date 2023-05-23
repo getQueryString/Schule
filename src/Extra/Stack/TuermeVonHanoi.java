@@ -41,7 +41,7 @@ public class TuermeVonHanoi {
         switch (moves) {
             case 0 -> System.out.println("Es wurde kein Zug gemacht; " + wayOfCalculation);
             case 1 -> System.out.println("Es wurde " + moves + " Zug gemacht; " + wayOfCalculation);
-            default -> System.out.println("Es wurden " + moves + " Züge gemacht; " + wayOfCalculation);
+            default -> System.out.println("Es wurden " + moves + " Zuege gemacht; " + wayOfCalculation);
         }
     }
 
