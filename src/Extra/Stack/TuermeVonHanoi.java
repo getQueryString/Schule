@@ -21,7 +21,7 @@ public class TuermeVonHanoi {
 
 
     static void createStartStack() {
-        System.out.println("Wie viele Kloetze soll der Turm haben?: ");
+        System.out.println("Wie viele Kloetze soll der Startturm haben?: ");
         sc = new Scanner(System.in);
         int input = sc.nextInt();
         sc.close();
