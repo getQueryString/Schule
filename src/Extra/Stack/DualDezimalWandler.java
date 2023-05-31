@@ -13,7 +13,6 @@ public class DualDezimalWandler {
         Scanner sc = new Scanner(System.in);
         String input = sc.nextLine();
 
-
         for (int i = input.length() - 1; i >= 0; i--) {
             char ch = input.charAt(i);
             if (Character.isDigit(ch))
@@ -30,10 +29,8 @@ public class DualDezimalWandler {
             System.out.println("c=" + c);
             dez *= 2;
             System.out.println("dez=" + dez);
-            if (c == 1) {
-                System.out.println("C ist gleich: " + c);
+            if (c == 1)
                 dez += 1;
-            }
             eingabe.pop();
             System.out.println("eingabe=" + eingabe + "\n");
         }
