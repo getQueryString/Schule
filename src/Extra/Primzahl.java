@@ -1,5 +1,3 @@
-// Copyright© by getQueryString/Fin
-
 package Extra;
 
 public class Primzahl {

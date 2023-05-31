@@ -1,6 +1,6 @@
 // Copyright© by getQueryString/Fin
 
-package Extra;
+package Kryptologie;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;

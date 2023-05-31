@@ -1,3 +1,5 @@
+// Copyright© by getQueryString/Fin
+
 package StdDraw;
 
 import java.awt.*;

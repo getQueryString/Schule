@@ -1,3 +1,5 @@
+// Copyright© by getQueryString/Fin
+
 package Extra.Stack;
 
 public class Stapel {

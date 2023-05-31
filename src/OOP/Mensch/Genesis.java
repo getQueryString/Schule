@@ -1,3 +1,7 @@
+// Copyright© by getQueryString/Fin
+
+package OOP.Mensch;
+
 public class Genesis {
 	
 /*	public final BRAUN = "Braun";
@@ -6,12 +10,12 @@ public class Genesis {
 	
 	/*public final M = 'M';
 	public final W = 'W';*/
-	
-	enum Haarfarbe {BRAUN,	BLOND,	SCHWARZ,}
-	
-	//enum Geschlecht {		M,		W	}
-	
-	public static void main(String... args) {
+
+    enum Haarfarbe {BRAUN, BLOND, SCHWARZ,}
+
+    //enum Geschlecht {		M,		W	}
+
+    public static void main(String... args) {
 		/*
 		private String name;
 		private	int alter;
@@ -20,8 +24,8 @@ public class Genesis {
 		private double gewicht;
 		private String haarfarbe;
 		*/
-		Mensch fin = new Mensch("Fin", 20, 'M', 1.7, 60, Haarfarbe.BRAUN.toString());
-		fin.sprechen();
-		System.out.println(fin.name);
-	}
+        Mensch fin = new Mensch("Fin", 20, 'M', 1.7, 60, Haarfarbe.BRAUN.toString());
+        fin.sprechen();
+        System.out.println(fin.name);
+    }
 }
