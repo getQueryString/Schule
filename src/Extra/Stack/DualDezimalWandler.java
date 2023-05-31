@@ -14,10 +14,8 @@ public class DualDezimalWandler {
 
         for (int i = input.length() - 1; i >= 0; i--) {
             char ch = input.charAt(i);
-            if (Character.isDigit(ch)) {
-                int zahl = Character.getNumericValue(ch);
-                eingabe.push(zahl);
-            }
+            if (Character.isDigit(ch))
+                eingabe.push(Character.getNumericValue(ch));
         }
 
         System.out.println("Eingabe: " + eingabe + "\n");
