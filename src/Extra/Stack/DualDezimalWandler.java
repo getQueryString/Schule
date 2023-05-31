@@ -9,9 +9,10 @@ public class DualDezimalWandler {
     public static void main(String[] args) {
         Stack<Integer> eingabe = new Stack<>();
 
-        System.out.println("Dualzahl eingeben: ");
-        Scanner sc = new Scanner(System.in);
-        String input = sc.nextLine();
+        /*Scanner sc = new Scanner(System.in);
+        String input = sc.nextLine();*/
+
+        String input = Kon.readString("Binaerzahl eingeben: ");
 
         for (int i = input.length() - 1; i >= 0; i--) {
             char ch = input.charAt(i);
