@@ -1,6 +1,6 @@
 // Die Klasse MyStack benennt lediglich die Methoden peek()
 // und empty() der Klasse Stack in top() und isEmpty() um.
-package Extra.Stack;
+package Extra.Stack_Queue;
 
 import java.util.*;
 

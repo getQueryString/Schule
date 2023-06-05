@@ -1,4 +1,4 @@
-package Extra.Stack;
+package Extra.Stack_Queue;
 
 import java.io.*;
 import java.util.*;

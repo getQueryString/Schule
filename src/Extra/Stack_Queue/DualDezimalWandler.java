@@ -1,8 +1,7 @@
 // Copyright© by getQueryString/Fin
 
-package Extra.Stack;
+package Extra.Stack_Queue;
 
-import java.util.Scanner;
 import java.util.Stack;
 
 public class DualDezimalWandler {

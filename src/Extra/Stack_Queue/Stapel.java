@@ -1,6 +1,6 @@
 // Copyright© by getQueryString/Fin
 
-package Extra.Stack;
+package Extra.Stack_Queue;
 
 public class Stapel {
 
